@@ -1,0 +1,34 @@
+.transactionHistory {
+    margin-left: 130px;
+}
+
+ /* .transactionDiscription {
+    display: flex;
+    justify-items: center;
+}  */
+
+/* .transactionDiscription:not(:last-child) {
+    margin-right: 30px;
+}  */
+
+.transactionDetail {
+    padding: 10px 70px;
+    border-radius: 5px;
+    background-color: rgb(9, 196, 196);
+    color: white;
+    
+}
+
+.transactionItem {
+    margin-bottom: 20px;
+    display: table-row;
+    
+
+    text-align: center;
+    padding-top: 20px;
+}
+.transactionData {
+    padding: 20px;
+    text-align: center;
+    color:rgb(112, 114, 114)
+}
