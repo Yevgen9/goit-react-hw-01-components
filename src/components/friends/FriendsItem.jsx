@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import defaultImg from '../../defaultImageUser.png';
+import defaultImg from '../Assets/defaultImageUser.png';
 
 import '../../scss/main.css';
 
