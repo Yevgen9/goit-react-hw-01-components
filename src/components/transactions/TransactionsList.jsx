@@ -1,5 +1,7 @@
-import React from "react";
-import TransactionsItem from "./TransactionHistory";
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import TransactionsItem from './TransactionHistory';
 
 function TransactionsList({ items }) {
   return (
@@ -13,7 +15,7 @@ function TransactionsList({ items }) {
       </thead>
 
       <tbody>
-        {items.map((item) => (
+        {items.map(item => (
           <tr key={item.id}>
             <TransactionsItem
               type={item.type}
@@ -26,5 +28,13 @@ function TransactionsList({ items }) {
     </table>
   );
 }
+
+TransactionsList.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRegular,
+    })
+  ),
+};
 
 export default TransactionsList;

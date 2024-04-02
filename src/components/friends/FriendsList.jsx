@@ -1,10 +1,12 @@
-import React from "react";
-import FriendsItem from "./FriendsItem";
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import FriendsItem from './FriendsItem';
 
 function FriendsList({ friendsProfile }) {
   return (
     <ul className="friend-list">
-      {friendsProfile.map((item) => (
+      {friendsProfile.map(item => (
         <li key={item.id} className="item">
           <FriendsItem
             avatar={item.avatar}
@@ -16,5 +18,13 @@ function FriendsList({ friendsProfile }) {
     </ul>
   );
 }
+
+FriendsList.propTypes = {
+  friendsProfile: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isReqular,
+    })
+  ),
+};
 
 export default FriendsList;
