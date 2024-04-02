@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImg from '../../defaultImageUser.png';
 
-import '../scss/main.css';
+import '../../scss/main.css';
 
 const FriendsItem = ({ id, name, avatar = defaultImg, isOnline }) => {
   return (

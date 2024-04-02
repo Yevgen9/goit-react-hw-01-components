@@ -1,7 +1,7 @@
 import React from 'react';
 import user from './user.json';
 
-import '../scss/main.css';
+import '../../scss/main.css';
 function Profile() {
   return (
     <div className="profile">
