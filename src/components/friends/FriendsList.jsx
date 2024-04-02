@@ -5,6 +5,7 @@ import FriendsItem from './FriendsItem';
 
 function FriendsList({ friendsProfile }) {
   return (
+    //=============================================================
     // <ul className="friend-list">
     //   {friendsProfile.map(item => (
     //     <li key={item.id} className="item">
@@ -16,7 +17,7 @@ function FriendsList({ friendsProfile }) {
     //     </li>
     //   ))}
     // </ul>
-
+//====================================================================
     // <ul className="friend-list">
     //   {friendsProfile.map(item => (
     //              <FriendsItem
@@ -24,7 +25,7 @@ function FriendsList({ friendsProfile }) {
     //       />
     //       ))}
     // </ul>
-
+//====================================================================
     <ul className="friend-list">
       {friendsProfile.map(({ id, avatar, name, isOnline }) => (
         <li key={id} className="item">
