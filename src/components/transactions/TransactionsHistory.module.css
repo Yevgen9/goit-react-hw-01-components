@@ -1,4 +1,4 @@
-.transaction-history {
+.transactionHistory {
   width: 100%;
   border: none;
   border-radius: 3px;
@@ -6,7 +6,7 @@
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.transaction-history thead th {
+.transactionHistory thead th {
   font-weight: bold;
   text-align: center;
   border: none;
@@ -17,7 +17,7 @@
   border-right: 1px solid #ddd;
 }
 
-.transaction-history tbody td {
+.transactionHistory tbody td {
   text-align: center;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -26,16 +26,17 @@
   vertical-align: top;
 }
 
-.tatransaction-historyble thead tr th:first-child,
-.transaction-history tbody tr td:first-child {
+.transactionHistory thead tr th:first-child,
+.transactionHistory tbody tr td:first-child {
   border-left: none;
 }
 
-.transaction-history thead tr th:last-child,
-.transaction-history tbody tr td:last-child {
+.transactionHistory thead tr th:last-child,
+.transactionHistory tbody tr td:last-child {
   border-right: none;
 }
 
 /* .transaction-history tbody tr:nth-child(even) {
     background: #f3f3f3;
-} *//*# sourceMappingURL=Transactions.module.css.map */
+} */
+/*# sourceMappingURL=Transactions.module.css.map */

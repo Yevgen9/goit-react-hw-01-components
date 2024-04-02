@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import FriendsItem from './FriendsItem';
+import style from './FriendsItem.module.css';
 
 function FriendsList({ friendsProfile }) {
   return (
@@ -17,7 +18,7 @@ function FriendsList({ friendsProfile }) {
     //     </li>
     //   ))}
     // </ul>
-//====================================================================
+    //====================================================================
     // <ul className="friend-list">
     //   {friendsProfile.map(item => (
     //              <FriendsItem
@@ -25,10 +26,11 @@ function FriendsList({ friendsProfile }) {
     //       />
     //       ))}
     // </ul>
-//====================================================================
-    <ul className="friend-list">
+    //====================================================================
+
+    <ul className={style.friendList}>
       {friendsProfile.map(({ id, avatar, name, isOnline }) => (
-        <li key={id} className="item">
+        <li key={id} className={style.item}>
           <FriendsItem avatar={avatar} name={name} isOnline={isOnline} />
         </li>
       ))}

@@ -10,14 +10,14 @@ h2 {
   margin-bottom: 20px;
 }
 
-.stat-list {
+.statList {
   display: flex;
   flex-direction: row;
   justify-items: center;
   margin: 0;
 }
 
-.stat-list .item {
+.statList .item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +28,11 @@ h2 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.stat-list .item:not(:last-child) {
+.statList .item:not(:last-child) {
   margin-right: 15px;
 }
 
-.stat-list .label {
+.statList .label {
   margin-bottom: 10px;
   color: rgb(249, 241, 136);
 }

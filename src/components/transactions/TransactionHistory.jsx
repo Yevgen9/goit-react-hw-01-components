@@ -14,7 +14,7 @@ const TransactionsHistory = ({ id, type, amount, currency }) => {
 
 TransactionsHistory.propTypes = {
   type: PropTypes.string.isRequired,
-  amount: PropTypes.number.isRequired,
+  amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
 };
 

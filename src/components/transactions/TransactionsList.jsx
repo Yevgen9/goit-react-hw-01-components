@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import TransactionsItem from './TransactionHistory';
+import s from './TransactionsHistory.module.css'
 
 function TransactionsList({ items }) {
   return (
-    <table class="transaction-history">
+    <table className={s.transactionHistory}>
       <thead>
-        <tr className="trList">
-          <th className="thItem">Type</th>
-          <th className="thItem">Amount</th>
-          <th className="thItem">Currency</th>
+        <tr className={s.trList}>
+          <th className={s.thItem}>Type</th>
+          <th className={s.thItem}>Amount</th>
+          <th className={s.thItem}>Currency</th>
         </tr>
       </thead>
 
