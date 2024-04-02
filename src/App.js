@@ -3,7 +3,7 @@ import React from 'react';
 import data from './components/Statistics/data.json';
 import friends from './components/Friends/friends.json';
 import transactions from './components/Transactions/transactions.json';
-import style from './App.module.scss';
+import style from './App.module.css';
 
 import Profile from './components/Profile/Profile';
 import StatisticsList from './components/Statistics/StatisticsList';
@@ -14,8 +14,11 @@ function App() {
   return (
     <>
       <Profile />
+
       <StatisticsList stats={data} />
+
       <FriendsList friendsProfile={friends} />
+
       <TransactionsList items={transactions} />
     </>
   );
