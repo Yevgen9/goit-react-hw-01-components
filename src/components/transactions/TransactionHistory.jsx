@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import '../../scss/main.css';
+import styles from './TransactionsHistory.module.scss';
 
 const TransactionsHistory = ({ id, type, amount, currency }) => {
   return (
     <>
-      <td className="tdItem">{type}</td>
-      <td className="tdItem">{amount}</td>
-      <td className="tdItem">{currency}</td>
+      <td className={styles.tdItem}>{type}</td>
+      <td className={styles.tdItem}>{amount}</td>
+      <td className={styles.tdItem}>{currency}</td>
     </>
   );
 };

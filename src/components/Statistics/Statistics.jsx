@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../scss/main.css';
+import styles from './Statistics.module.scss';
 
 const Statistics = ({ id, label, percentage }) => {
   return (
     <>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
     </>
   );
 };

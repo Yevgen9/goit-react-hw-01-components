@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImg from '../Assets/defaultImageUser.png';
-
-import '../../scss/main.css';
+import styles from './Friends.module.scss'
 
 const FriendsItem = ({ id, name, avatar = defaultImg, isOnline }) => {
   return (
     <>
-      <span className="status">{isOnline ? 'Online' : 'Offline'}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+      <span className={styles.status}>{isOnline ? 'Online' : 'Offline'}</span>
+      <img className={styles.avatar} src={avatar} alt={name} width="48" />
+      <p className={styles.name}>{name}</p>
     </>
   );
 };

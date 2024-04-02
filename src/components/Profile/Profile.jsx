@@ -1,10 +1,11 @@
 import React from 'react';
 import user from './user.json';
 
-import '../../scss/main.css';
+import styles from './Profile.module.scss';
+
 function Profile() {
   return (
-    <div className="profile">
+    <div className={styles.profile}>
       <div className="description">
         <img
           className="avatar"
