@@ -1,8 +1,7 @@
-import React from "react";
-import user from "./user.json";
+import React from 'react';
+import user from './user.json';
 
-import css from "./profileCss.css";
-
+import '../scss/main.css';
 function Profile() {
   return (
     <div className="profile">

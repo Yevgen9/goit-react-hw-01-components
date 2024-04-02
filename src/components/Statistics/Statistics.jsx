@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import css from "./statisticsCss.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../scss/main.css';
 
 const Statistics = ({ id, label, percentage }) => {
   return (
