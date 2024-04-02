@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import TransactionsItem from './TransactionHistory';
-import s from './TransactionsHistory.module.css'
+import s from './TransactionsHistory.module.scss';
 
 function TransactionsList({ items }) {
   return (
@@ -33,7 +33,7 @@ function TransactionsList({ items }) {
 TransactionsList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRegular,
+      id: PropTypes.string,
     })
   ),
 };

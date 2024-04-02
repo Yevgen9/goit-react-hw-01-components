@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Statistics from './Statistics';
-import s from './Statistics.module.css';
+import s from './Statistics.module.scss';
 
 function StatisticsList({ stats }) {
   return (
@@ -22,7 +22,7 @@ function StatisticsList({ stats }) {
 StatisticsList.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRegular,
+      id: PropTypes.string,
     })
   ),
 };

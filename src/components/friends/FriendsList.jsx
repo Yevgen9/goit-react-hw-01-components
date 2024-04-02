@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import FriendsItem from './FriendsItem';
-import style from './FriendsItem.module.css';
+import style from './FriendsItem.module.scss';
 
 function FriendsList({ friendsProfile }) {
   return (
@@ -41,7 +41,7 @@ function FriendsList({ friendsProfile }) {
 FriendsList.propTypes = {
   friendsProfile: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isReqular,
+      id: PropTypes.number,
     })
   ),
 };

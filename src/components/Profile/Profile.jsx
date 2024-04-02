@@ -1,7 +1,7 @@
 import React from 'react';
 import user from './user.json';
 
-import s from './Profile.module.css';
+import s from './Profile.module.scss';
 
 function Profile() {
   return (

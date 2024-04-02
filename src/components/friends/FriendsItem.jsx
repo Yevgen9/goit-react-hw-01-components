@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImg from '../Assets/defaultImageUser.png';
-import styles from './FriendsItem.module.css'
+import styles from './FriendsItem.module.scss';
 
 const FriendsItem = ({ id, name, avatar = defaultImg, isOnline }) => {
   return (
@@ -16,7 +16,7 @@ const FriendsItem = ({ id, name, avatar = defaultImg, isOnline }) => {
 FriendsItem.propTypes = {
   name: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  isOnline: PropTypes.bool,
 };
 
 export default FriendsItem;
